@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>million spoon ranking</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="/assets/styles/main.css" />
+  </head>
 
-<body>
+  <body>
     <button class="edit">編集</button>
     <div class="confirm hidden">
-        <div class="confirm-container">
-            <div>本当に削除しますか？</div>
-            <div class="confirm-button-div">
-                <button id="yes">はい</button>
-                <button id="no">いいえ</button>
-            </div>
+      <div class="confirm-container">
+        <div>本当に削除しますか？</div>
+        <div class="confirm-button-div">
+          <button id="yes">はい</button>
+          <button id="no">いいえ</button>
         </div>
-
+      </div>
     </div>
     <div class="wrap">
-        <h1>Million Spoon🥄</h1>
+      <h1>Million Spoon🥄</h1>
 
-        <form id="rankingForm">
-            <input type="text" id="name" placeholder="Name" required>
-            <input type="number" id="score" placeholder="Score" required>
-            <button type="submit">保存</button>
-        </form>
+      <form id="rankingForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="score" placeholder="Score" required />
+        <button type="submit">保存</button>
+      </form>
 
-        <h2>Ranking</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th class="th-r">ランキング</th>
-                    <th class="th-n">名前</th>
-                    <th class="th-s">スコア</th>
-                    <th class="th-t">時間</th>
-                </tr>
-            </thead>
-            <tbody id="rankingTable">
-                <!-- show the ranking deta here -->
-            </tbody>
-        </table>
+      <h2>Ranking</h2>
+      <table>
+        <thead>
+          <tr>
+            <th class="th-r">ランキング</th>
+            <th class="th-n">名前</th>
+            <th class="th-s">スコア</th>
+            <th class="th-t">時間</th>
+          </tr>
+        </thead>
+        <tbody id="rankingTable">
+          <!-- show the ranking deta here -->
+        </tbody>
+      </table>
     </div>
-    <script src="script.js"></script>
-</body>
-
+    <script type="module" src="/assets/modules/main.ts"></script>
+  </body>
 </html>
