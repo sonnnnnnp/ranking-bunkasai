@@ -5,48 +5,10 @@ body {
     font-family: cursive;
 }
 
-/* 削除確認ポップアップ */
-.confirm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    height: 100dvh;
-    width: 100dvw;
-}
-.confirm-container {
-    background-color: #f6cdf6;
-    border: solid 2px #fff;
-    border-radius: 1rem;
-    width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.confirm-button-div {
-    margin-top: 30px;
-}
-.confirm-button-div button {
-    border: solid 2px #fff;
-}
-
 /* ボタン */
 button {
     background-color: #f6cdf6;
     color: #fff;
-    border: none;
-    height: 2rem;
-    border-radius: 0.5rem;
-}
-
-/* 入力フォーム */
-input {
-    background: #eee;
-}
-
-input {
     border: none;
     height: 2rem;
     border-radius: 0.5rem;
@@ -113,19 +75,4 @@ tr:nth-child(3) td {
     100% {
       background-position: 0% 50%;
     }
-}
-
-.delete_td {
-    width: 60px;
-}
-
-/* 編集ボタン */
-.edit {
-    position: fixed;
-    right: 0.5rem;
-}
-
-/* 要素を隠す */
-.hidden {
-    visibility: hidden;
 }
